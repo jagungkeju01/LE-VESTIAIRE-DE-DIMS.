@@ -18,13 +18,43 @@
   <main class="detail-main">
     <p class="breadcrumb"><a href="index.html">HOME</a><span>/</span><a href="products.html">SHOP</a><span>/</span><span>PRODUCT NAME</span></p>
     <section class="detail-layout">
-      <div class="detail-gallery">
-        <div class="detail-main-image image-placeholder"><span>MAIN PRODUCT IMAGE</span><span class="placeholder-note">Foto utama produk</span></div>
-        <div class="detail-thumbnails">
-          <div class="image-placeholder"><span>IMAGE 02</span></div>
-          <div class="image-placeholder"><span>IMAGE 03</span></div>
-          <div class="image-placeholder"><span>IMAGE 04</span></div>
-        </div>
+      
+<div class="detail-gallery">
+  <div class="detail-main-image">
+    <img
+      id="main-product-photo"
+      src="chmb.jpg"
+      alt="CHMB White Hoodie"
+    >
+  </div>
+
+  <div class="detail-thumbnails">
+    <button type="button" class="thumbnail active"
+      data-image="chmb.jpg"
+      aria-label="Foto depan">
+      <img src="chmb.jpg" alt="Foto depan hoodie">
+    </button>
+
+    <button type="button" class="thumbnail"
+      data-image="chmb-back.jpg"
+      aria-label="Foto belakang">
+      <img src="chmb-back.jpg" alt="Foto belakang hoodie">
+    </button>
+
+    <button type="button" class="thumbnail"
+      data-image="chmb-label.jpg"
+      aria-label="Foto label pakaian">
+      <img src="chmb-label.jpg" alt="Detail label hoodie">
+    </button>
+
+    <button type="button" class="thumbnail"
+      data-image="chmb-detail.jpg"
+      aria-label="Detail bahan">
+      <img src="chmb-detail.jpg" alt="Detail bahan hoodie">
+    </button>
+  </div>
+</div>
+      
       </div>
       <div class="detail-info">
         <p class="eyebrow">MAISON DIMS® / NEW COLLECTION</p>
