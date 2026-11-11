@@ -82,5 +82,24 @@
     </div>
     <div class="footer-bottom"><span>© 2026 MAISON DIMS. ALL RIGHTS RESERVED.</span><span>DESIGNED WITH INTENTION.</span></div>
   </footer>
+
+<script>
+  const mainPhoto = document.getElementById("main-product-photo");
+  const thumbnails = document.querySelectorAll(".thumbnail");
+
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+      mainPhoto.src = thumbnail.dataset.image;
+      mainPhoto.alt = thumbnail.querySelector("img").alt;
+
+      thumbnails.forEach((item) => {
+        item.classList.remove("active");
+      });
+
+      thumbnail.classList.add("active");
+    });
+  });
+</script>
+  
 </body>
 </html>
