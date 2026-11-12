@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all products in the MAISON DIMS streetwear collection.">
+  <title>All Products — MAISON DIMS®</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="catalog-page">
+  <header class="site-header">
+    <nav class="nav-left" aria-label="Navigasi utama">
+      <a href="products.html" aria-current="page">SHOPS</a>
+      <a href="index.html#about">ABOUT US</a>
+      <a href="index.html#lookbook">LOOK BOOK</a>
+      <a href="index.html#more" class="more-link" aria-label="Menu lainnya">•••</a>
+    </nav>
+    <a class="brand-logo" href="index.html" aria-label="MAISON DIMS beranda">MAISON DIMS<span>®</span></a>
+    <div class="nav-right">
+      <span class="currency"><span class="flag-id" aria-hidden="true"></span> IDR</span>
+      <a class="icon-link bag-icon" href="#product-grid" aria-label="Lihat katalog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a>
+      <a class="icon-link user-icon" href="index.html#footer" aria-label="Informasi akun"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+    </div>
+  </header>
+
+  <main class="catalog-main">
+    <div class="catalog-heading">
+      <p class="eyebrow">THE FULL COLLECTION</p>
+      <h1>ALL PRODUCTS</h1>
+      <p class="catalog-subtitle">Explore the latest pieces from our collection.</p>
+    </div>
+
+    <!-- Dropdown ini masih UI statis. Filter sungguhan memerlukan JavaScript atau backend. -->
+    <form class="filter-bar" aria-label="Opsi filter produk">
+      <label class="filter-control"><span class="sr-only">Category</span>
+        <select name="category"><option>category : all</option><option>hoodies</option><option>jackets</option><option>sweaters</option><option>t-shirts</option></select>
+      </label>
+      <label class="filter-control"><span class="sr-only">Size</span>
+        <select name="size"><option>size : all</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+      </label>
+      <label class="filter-control"><span class="sr-only">Price</span>
+        <select name="price"><option>price : all</option><option>Under Rp 200.000</option><option>Rp 200.000–400.000</option><option>Above Rp 400.000</option></select>
+      </label>
+      <label class="filter-control"><span class="sr-only">Availability</span>
+        <select name="availability"><option>availability : all</option><option>in stock</option><option>sold out</option></select>
+      </label>
+      <label class="filter-control sort-control"><span class="sr-only">Sort products</span>
+        <select name="sort"><option>sort : Featured</option><option>Price: low to high</option><option>Price: high to low</option><option>Newest</option></select>
+      </label>
+    </form>
+    <p class="filter-note">Filter dan pengurutan di atas merupakan kerangka visual; hasil produk belum berubah otomatis.</p>
+
+    <section class="product-grid catalog-grid" id="product-grid" aria-label="Daftar produk">\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=chmb" aria-label="Lihat detail CHMB Hoodie">
+          <img src="chmb.jpg" alt="CHMB Hoodie" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>CHMB Hoodie</h2><p>HOODIE</p></div>
+          <span class="price">Rp 300.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=dls-knitwear" aria-label="Lihat detail Dust La Stella Knitwear">
+          <img src="Dls-knitwear-depan.jpg" alt="Dust La Stella Knitwear" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>Dust La Stella Knitwear</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 574.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=gbec-schufle" aria-label="Lihat detail GBEC Schufle">
+          <img src="GBEC-Schufle-depan.jpg" alt="GBEC Schufle" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>GBEC Schufle</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 435.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=gbeck-blue" aria-label="Lihat detail GBECK Blue">
+          <img src="GBECK-blue-depan.jpg" alt="GBECK Blue" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>GBECK Blue</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 435.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=mmoxie-green" aria-label="Lihat detail MMoxie Green">
+          <img src="MMoxie-green-depan.jpg" alt="MMoxie Green" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>MMoxie Green</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 425.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=moxie-sk" aria-label="Lihat detail Moxie SK">
+          <img src="Moxie-sk-depan.jpg" alt="Moxie SK" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>Moxie SK</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 425.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=us-waffleknit" aria-label="Lihat detail US Waffleknit">
+          <img src="US-waffleknit-depan.jpg" alt="US Waffleknit" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>US Waffleknit</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 399.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <a class="product-image" href="product-detail.html?product=knitwear-oasis" aria-label="Lihat detail Knitwear Oasis">
+          <img src="knitwear-oasis-depan.jpg" alt="Knitwear Oasis" loading="lazy">
+        </a>
+        <div class="product-info">
+          <div><h2>Knitwear Oasis</h2><p>KNITWEAR</p></div>
+          <span class="price">Rp 399.000</span>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="product-image image-placeholder" aria-label="Foto produk belum tersedia">
+          <span>PRODUCT IMAGE 09</span>
+        </div>
+        <div class="product-info">
+          <div><h2>Produk Baru</h2><p>FOTO MENYUSUL</p></div>
+          <span class="price">Segera hadir</span>
+        </div>
+      </article>\n    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-top">
+      <div class="footer-brand-block"><a class="brand-logo footer-logo" href="index.html">MAISON DIMS<span>®</span></a><p>CONTEMPORARY STREETWEAR.</p></div>
+      <div class="footer-column"><h2>EXPLORE</h2><a href="products.html">Shop all</a><a href="index.html#lookbook">Look book</a><a href="index.html#about">About us</a></div>
+      <div class="footer-column"><h2>HELP</h2><a href="#footer">Contact</a><a href="#footer">Shipping information</a><a href="#footer">Returns</a></div>
+      <div class="footer-column"><h2>FOLLOW</h2><a href="https://www.instagram.com/dimmdhnes_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram MAISON DIMS">Instagram ↗</a><a href="https://www.tiktok.com/@smiddun" target="_blank" rel="noopener noreferrer" aria-label="TikTok MAISON DIMS">TikTok ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 MAISON DIMS. ALL RIGHTS RESERVED.</span><span>DESIGNED WITH INTENTION.</span></div>
+  </footer>
+</body>
+</html>
