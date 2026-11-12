@@ -422,9 +422,9 @@ html{scroll-behavior:smooth}body{color:var(--ink)}body.menu-open{overflow:hidden
 }
 @media (max-width: 760px) {
   .home-page .home-hero-image {
-    height: 52vh !important;
-    min-height: 300px !important;
-    max-height: 430px;
+    height: 68vh !important;
+    min-height: 420px !important;
+    max-height: 560px;
     object-position: center center;
   }
   .home-page .hero-brand-stamp {
@@ -440,4 +440,25 @@ html{scroll-behavior:smooth}body{color:var(--ink)}body.menu-open{overflow:hidden
     letter-spacing: .6px;
     text-align: right;
   }
+   
+/* MENU TIGA TITIK DI KIRI ATAS */
+@media (max-width: 760px) {
+  .site-header {
+    position: relative;
+  }
+
+  .nav-left .more-link {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: block;
+    margin: 0;
+    padding: 8px 4px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+   
 }
