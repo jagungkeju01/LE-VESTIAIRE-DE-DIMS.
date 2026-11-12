@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product details — MAISON DIMS streetwear.">
+  <title>Product Details — MAISON DIMS®</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <nav class="nav-left" aria-label="Navigasi utama">
+      <a href="products.html">SHOPS</a><a href="index.html#about">ABOUT US</a><a href="index.html#lookbook">LOOK BOOK</a><a href="index.html#more" class="more-link" aria-label="Menu lainnya">•••</a>
+    </nav>
+    <a class="brand-logo" href="index.html" aria-label="MAISON DIMS beranda">MAISON DIMS<span>®</span></a>
+    <div class="nav-right"><span class="currency"><span class="flag-id" aria-hidden="true"></span> IDR</span><a class="icon-link bag-icon" href="products.html" aria-label="Lihat produk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></a><a class="icon-link user-icon" href="index.html#footer" aria-label="Informasi akun"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a></div>
+  </header>
+  <main class="detail-main">
+    <p class="breadcrumb"><a href="index.html">HOME</a><span>/</span><a href="products.html">SHOP</a><span>/</span><span>PRODUCT NAME</span></p>
+    <section class="detail-layout">
+      <div class="detail-gallery">
+        <div class="detail-main-image">
+          <img id="main-product-photo" src="chmb.jpg" alt="Foto depan CHMB Hoodie">
+        </div>
+        <div class="detail-thumbnails" id="product-thumbnails" aria-label="Foto produk"></div>
+      </div>
+      <div class="detail-info">
+        <p class="eyebrow">MAISON DIMS® / NEW COLLECTION</p>
+        <h1 id="product-name">CHMB Hoodie</h1>
+        <p class="detail-price" id="product-price">Rp 300.000</p>
+        <div class="detail-divider"></div>
+        <p class="detail-description" id="product-description">Hoodie hitam dengan grafis CHMB.</p>
+        <p class="field-label">PRODUCT PHOTOS</p>
+        <p class="detail-description">Pilih foto kecil di bawah gambar utama untuk melihat tampak depan, belakang, dan label ukuran.</p>
+        <a href="products.html" class="button button-dark detail-button">BACK TO ALL PRODUCTS</a>
+        <div class="detail-divider"></div>
+        <div class="detail-extra">
+          <h2>PRODUCT DETAILS</h2>
+          <p>Foto 1: tampak depan</p>
+          <p>Foto 2: tampak belakang</p>
+          <p>Foto 3: label dan ukuran</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="footer">
+    <div class="footer-top">
+      <div class="footer-brand-block"><a class="brand-logo footer-logo" href="index.html">MAISON DIMS<span>®</span></a><p>CONTEMPORARY STREETWEAR.</p></div>
+      <div class="footer-column"><h2>EXPLORE</h2><a href="products.html">Shop all</a><a href="index.html#lookbook">Look book</a><a href="index.html#about">About us</a></div>
+      <div class="footer-column"><h2>HELP</h2><a href="#footer">Contact</a><a href="#footer">Shipping information</a><a href="#footer">Returns</a></div>
+      <div class="footer-column"><h2>FOLLOW</h2><a href="https://www.instagram.com/dimmdhnes_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram MAISON DIMS">Instagram ↗</a><a href="https://www.tiktok.com/@smiddun" target="_blank" rel="noopener noreferrer" aria-label="TikTok MAISON DIMS">TikTok ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 MAISON DIMS. ALL RIGHTS RESERVED.</span><span>DESIGNED WITH INTENTION.</span></div>
+  </footer>
+
+
+
+  
+  
+
+
+<script>
+const products = {
+  "chmb": {
+    "name": "CHMB Hoodie",
+    "price": "Rp 300.000",
+    "description": "Hoodie hitam dengan grafis CHMB. Periksa foto belakang dan label ukuran sebelum memilih produk.",
+    "images": [
+      "chmb.jpg",
+      "chmb-back.jpg",
+      "chmb-ukuran.jpg"
+    ]
+  },
+  "dls-knitwear": {
+    "name": "Dust La Stella Knitwear",
+    "price": "Rp 574.000",
+    "description": "Knitwear grafis Dust La Stella dengan tampilan streetwear. Lihat foto depan, belakang, dan panduan ukuran.",
+    "images": [
+      "Dls-knitwear-depan.jpg",
+      "Dls-knitwear-back.jpg",
+      "Dls-knitwear-ukuran.jpg"
+    ]
+  },
+  "gbec-schufle": {
+    "name": "GBEC Schufle",
+    "price": "Rp 435.000",
+    "description": "Produk GBEC Schufle. Galeri menampilkan bagian depan, belakang, serta label atau ukuran.",
+    "images": [
+      "GBEC-Schufle-depan.jpg",
+      "GBEC-schufle-belakang.jpg",
+      "GBEC-schufle-label.jpg"
+    ]
+  },
+  "gbeck-blue": {
+    "name": "GBECK Blue",
+    "price": "Rp 435.000",
+    "description": "Produk GBECK Blue. Galeri menampilkan bagian depan, belakang, serta label atau ukuran.",
+    "images": [
+      "GBECK-blue-depan.jpg",
+      "GBECK-blue-belakang.jpg",
+      "GBECK-blue-label.jpg"
+    ]
+  },
+  "mmoxie-green": {
+    "name": "MMoxie Green",
+    "price": "Rp 425.000",
+    "description": "Produk MMoxie Green. Lihat detail desain dari depan, belakang, dan label ukuran.",
+    "images": [
+      "MMoxie-green-depan.jpg",
+      "MMoxie-green-belakang.jpg",
+      "MMmoxie-green-label.jpg"
+    ]
+  },
+  "moxie-sk": {
+    "name": "Moxie SK",
+    "price": "Rp 425.000",
+    "description": "Produk Moxie SK. Galeri berisi foto depan, belakang, dan label ukuran.",
+    "images": [
+      "Moxie-sk-depan.jpg",
+      "Moxie-sk-belakang.jpg",
+      "Moxie-sk-label.jpg"
+    ]
+  },
+  "us-waffleknit": {
+    "name": "US Waffleknit",
+    "price": "Rp 399.000",
+    "description": "Produk US Waffleknit. Periksa foto depan, belakang, dan label ukuran untuk detail produk.",
+    "images": [
+      "US-waffleknit-depan.jpg",
+      "US-waffleknit-belakang.jpg",
+      "US-knitwaffle-label.jpg"
+    ]
+  },
+  "knitwear-oasis": {
+    "name": "Knitwear Oasis",
+    "price": "Rp 399.000",
+    "description": "Knitwear Oasis dengan tiga foto produk: tampak depan, belakang, dan label ukuran.",
+    "images": [
+      "knitwear-oasis-depan.jpg",
+      "knitwear-oasis-belakang.jpg",
+      "knitwear-oasis-label.jpg"
+    ]
+  }
+};
+
+const params = new URLSearchParams(window.location.search);
+const requestedId = params.get("product") || "chmb";
+const product = products[requestedId] || products.chmb;
+
+const mainPhoto = document.getElementById("main-product-photo");
+const gallery = document.getElementById("product-thumbnails");
+
+document.getElementById("product-name").textContent = product.name;
+document.getElementById("product-price").textContent = product.price;
+document.getElementById("product-description").textContent = product.description;
+document.title = product.name + " — MAISON DIMS®";
+
+const photoLabels = ["Foto depan", "Foto belakang", "Foto label dan ukuran"];
+
+gallery.innerHTML = product.images.map((image, index) => `
+  <button type="button" class="thumbnail ${index === 0 ? "active" : ""}"
+    data-image="${image}" aria-label="${photoLabels[index]}">
+    <img src="${image}" alt="${photoLabels[index]} ${product.name}" loading="lazy">
+  </button>
+`).join("");
+
+function showPhoto(button) {
+  mainPhoto.src = button.dataset.image;
+  mainPhoto.alt = button.querySelector("img").alt;
+  gallery.querySelectorAll(".thumbnail").forEach(item => item.classList.remove("active"));
+  button.classList.add("active");
+}
+
+gallery.querySelectorAll(".thumbnail").forEach(button => {
+  button.addEventListener("click", () => showPhoto(button));
+});
+
+mainPhoto.src = product.images[0];
+mainPhoto.alt = photoLabels[0] + " " + product.name;
+</script>
+</body>
+</html>
