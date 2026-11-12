@@ -47,6 +47,32 @@
       <img src="chmb-ukuran.jpg" alt="">
     </button>
 
+  
+<div class="detail-gallery">
+  <div class="detail-main-image">
+    <img id="main-product-photo" src="Dls-knitwear-depan.jpg"
+         alt="">
+  </div>
+
+  <div class="detail-thumbnails" id="product-thumbnails">
+    <button type="button" class="thumbnail active"
+            data-image="Dls-knitwear-depan.jpg">
+      <img src="Dls-knitwear-depan.jpg" alt="Foto depan">
+    </button>
+
+    <button type="button" class="thumbnail"
+            data-image="Dls-knitwear-back.jpg">
+      <img src="Dls-knitwear-back.jpg" alt="Foto belakang">
+    </button>
+
+    <button type="button" class="thumbnail"
+            data-image="Dls-knitwear-ukuran.jpg">
+      <img src="Dls-knitwear-ukuran.jpg" alt="Foto label dan ukuran">
+    </button>
+  </div>
+</div>
+    
+
       </div>
       <div class="detail-info">
         <p class="eyebrow">MAISON DIMS® / NEW COLLECTION</p>
@@ -77,105 +103,119 @@
 
 
 <script>
-  const products = {
-    chmb: {
-      name: "CHMB BLACK HOODIE",
-      price: "Rp 399.000",
-      photos: [
-        "chmb.jpg",
-        "chmb-back.jpg",
-        "chmb-ukuran.jpg"
-      ]
-    },
+  
+const products = {
+  "chmb": {
+    name: "CHMB Black Hoodie",
+    images: [
+      "chmb.jpg",
+      "chmb-back.jpg",
+      "chmb-ukuran.jpg"
+    ]
+  },
 
-    DustLaStella: {
-      name: "Dust La Stella - Knitwear",
-      price: "Rp 574.000",
-      photos: [
-        "Dls-knitwear.jpg",
-        "Dls-back.jpg",
-        "Dls-ukuran.jpg"
-      ]
-    },
+  "dls-knitwear": {
+    name: "DLS Knitwear",
+    images: [
+      "Dls-knitwear-depan.jpg",
+      "Dls-knitwear-back.jpg",
+      "Dls-knitwear-ukuran.jpg"
+    ]
+  },
 
-    produk3: {
-      name: "PRODUK 3",
-      price: "Rp 300.000",
-      photos: ["produk3.jpg", "produk3-back.jpg", "produk3-ukuran.jpg"]
-    },
+  "gbec-schufle": {
+    name: "GBEC Schufle",
+    images: [
+      "GBEC-Schufle-depan.jpg",
+      "GBEC-schufle-belakang.jpg",
+      "GBEC-schufle-label.jpg"
+    ]
+  },
 
-    produk4: {
-      name: "PRODUK 4",
-      price: "Rp 459.000",
-      photos: ["produk4.jpg", "produk4-back.jpg", "produk4-ukuran.jpg"]
-    },
+  "gbe ck-blue": {
+    name: "GBECK Blue",
+    images: [
+      "GBECK-blue-depan.jpg",
+      "GBECK-blue-belakang.jpg",
+      "GBECK-blue-label.jpg"
+    ]
+  },
 
-    produk5: {
-      name: "PRODUK 5",
-      price: "Rp 329.000",
-      photos: ["produk5.jpg", "produk5-back.jpg", "produk5-ukuran.jpg"]
-    },
+  "mmoxie-green": {
+    name: "MMoxie Green",
+    images: [
+      "MMoxie-green-depan.jpg",
+      "MMoxie-green-belakang.jpg",
+      "MMmoxie-green-label.jpg"
+    ]
+  },
 
-    produk6: {
-      name: "PRODUK 6",
-      price: "Rp 379.000",
-      photos: ["produk6.jpg", "produk6-back.jpg", "produk6-ukuran.jpg"]
-    },
+  "moxie-sk": {
+    name: "Moxie SK",
+    images: [
+      "Moxie-sk-depan.jpg",
+      "Moxie-sk-belakang.jpg",
+      "Moxie-sk-label.jpg"
+    ]
+  },
 
-    produk7: {
-      name: "PRODUK 7",
-      price: "Rp 300.000",
-      photos: ["produk7.jpg", "produk7-back.jpg", "produk7-ukuran.jpg"]
-    },
+  "us-waffleknit": {
+    name: "US Waffleknit",
+    images: [
+      "US-waffleknit-depan.jpg",
+      "US-waffleknit-belakang.jpg",
+      "US-knitwaffle-label.jpg"
+    ]
+  },
 
-    produk8: {
-      name: "PRODUK 8",
-      price: "Rp 300.000",
-      photos: ["produk8.jpg", "produk8-back.jpg", "produk8-ukuran.jpg"]
-    },
-
-    produk9: {
-      name: "PRODUK 9",
-      price: "Rp 300.000",
-      photos: ["produk9.jpg", "produk9-back.jpg", "produk9-ukuran.jpg"]
-    }
-  };
-
-  const params = new URLSearchParams(window.location.search);
-  const productId = params.get("product") || "chmb";
-  const product = products[productId] || products.chmb;
-
-  const mainPhoto = document.getElementById("main-product-photo");
-  const thumbnails = document.querySelectorAll(".thumbnail");
-  const title = document.querySelector(".detail-info h1");
-  const price = document.querySelector(".detail-price");
-
-  title.textContent = product.name;
-  price.textContent = product.price;
-
-  function showPhoto(thumbnail) {
-    mainPhoto.src = thumbnail.dataset.image;
-    mainPhoto.alt = thumbnail.querySelector("img").alt;
-
-    thumbnails.forEach((item) => {
-      item.classList.remove("active");
-    });
-
-    thumbnail.classList.add("active");
+  "knitwear-oasis": {
+    name: "Knitwear Oasis",
+    images: [
+      "knitwear-oasis-depan.jpg",
+      "knitwear-oasis-belakang.jpg",
+      "knitwear-oasis-label.jpg"
+    ]
   }
+};
 
-  thumbnails.forEach((thumbnail, index) => {
-    thumbnail.dataset.image = product.photos[index];
-    thumbnail.querySelector("img").src = product.photos[index];
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("product") || "chmb";
+const product = products[productId] || products.chmb;
 
-    thumbnail.addEventListener("click", () => {
-      showPhoto(thumbnail);
-    });
+const mainPhoto = document.getElementById("main-product-photo");
+const gallery = document.getElementById("product-thumbnails");
+
+document.querySelector(".detail-info h1").textContent = product.name;
+
+function showPhoto(image, button) {
+  mainPhoto.src = image;
+  mainPhoto.alt = button.querySelector("img").alt;
+
+  gallery.querySelectorAll(".thumbnail").forEach(item => {
+    item.classList.remove("active");
   });
 
-  if (thumbnails.length > 0) {
-    showPhoto(thumbnails[0]);
-  }
+  button.classList.add("active");
+}
+
+gallery.innerHTML = product.images.map((image, index) => `
+  <button type="button"
+    class="thumbnail ${index === 0 ? "active" : ""}"
+    data-image="${image}">
+    <img src="${image}"
+      alt="${["Foto depan", "Foto belakang", "Foto label dan ukuran"][index]}">
+  </button>
+`).join("");
+
+gallery.querySelectorAll(".thumbnail").forEach(button => {
+  button.addEventListener("click", () => {
+    showPhoto(button.dataset.image, button);
+  });
+});
+
+mainPhoto.src = product.images[0];
+mainPhoto.alt = "Foto depan " + product.name;
+  
       </script>
   
   
