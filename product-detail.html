@@ -75,23 +75,109 @@
     <div class="footer-bottom"><span>© 2026 MAISON DIMS. ALL RIGHTS RESERVED.</span><span>DESIGNED WITH INTENTION.</span></div>
   </footer>
 
+
 <script>
+  const products = {
+    chmb: {
+      name: "CHMB BLACK HOODIE",
+      price: "Rp 399.000",
+      photos: [
+        "chmb.jpg",
+        "chmb-back.jpg",
+        "chmb-ukuran.jpg"
+      ]
+    },
+
+    hotweels: {
+      name: "HOTWEELS ORIGINAL",
+      price: "Rp 574.000",
+      photos: [
+        "hootwels.jpg",
+        "hootwels-back.jpg",
+        "hootwels-ukuran.jpg"
+      ]
+    },
+
+    produk3: {
+      name: "PRODUK 3",
+      price: "Rp 300.000",
+      photos: ["produk3.jpg", "produk3-back.jpg", "produk3-ukuran.jpg"]
+    },
+
+    produk4: {
+      name: "PRODUK 4",
+      price: "Rp 459.000",
+      photos: ["produk4.jpg", "produk4-back.jpg", "produk4-ukuran.jpg"]
+    },
+
+    produk5: {
+      name: "PRODUK 5",
+      price: "Rp 329.000",
+      photos: ["produk5.jpg", "produk5-back.jpg", "produk5-ukuran.jpg"]
+    },
+
+    produk6: {
+      name: "PRODUK 6",
+      price: "Rp 379.000",
+      photos: ["produk6.jpg", "produk6-back.jpg", "produk6-ukuran.jpg"]
+    },
+
+    produk7: {
+      name: "PRODUK 7",
+      price: "Rp 300.000",
+      photos: ["produk7.jpg", "produk7-back.jpg", "produk7-ukuran.jpg"]
+    },
+
+    produk8: {
+      name: "PRODUK 8",
+      price: "Rp 300.000",
+      photos: ["produk8.jpg", "produk8-back.jpg", "produk8-ukuran.jpg"]
+    },
+
+    produk9: {
+      name: "PRODUK 9",
+      price: "Rp 300.000",
+      photos: ["produk9.jpg", "produk9-back.jpg", "produk9-ukuran.jpg"]
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get("product") || "chmb";
+  const product = products[productId] || products.chmb;
+
   const mainPhoto = document.getElementById("main-product-photo");
   const thumbnails = document.querySelectorAll(".thumbnail");
+  const title = document.querySelector(".detail-info h1");
+  const price = document.querySelector(".detail-price");
 
-  thumbnails.forEach((thumbnail) => {
+  title.textContent = product.name;
+  price.textContent = product.price;
+
+  function showPhoto(thumbnail) {
+    mainPhoto.src = thumbnail.dataset.image;
+    mainPhoto.alt = thumbnail.querySelector("img").alt;
+
+    thumbnails.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    thumbnail.classList.add("active");
+  }
+
+  thumbnails.forEach((thumbnail, index) => {
+    thumbnail.dataset.image = product.photos[index];
+    thumbnail.querySelector("img").src = product.photos[index];
+
     thumbnail.addEventListener("click", () => {
-      mainPhoto.src = thumbnail.dataset.image;
-      mainPhoto.alt = thumbnail.querySelector("img").alt;
-
-      thumbnails.forEach((item) => {
-        item.classList.remove("active");
-      });
-
-      thumbnail.classList.add("active");
+      showPhoto(thumbnail);
     });
   });
-</script>
+
+  if (thumbnails.length > 0) {
+    showPhoto(thumbnails[0]);
+  }
+      </script>
+  
   
 </body>
 </html>
